@@ -1,0 +1,58 @@
+# requirements.txt
+
+# Core LangChain framework
+langchain>=0.2.0
+langchain-community>=0.0.29 # For integrations like Ollama, FAISS, embeddings
+langchain-huggingface
+langchain_ollama
+
+# Ollama Python client
+ollama
+
+# Vector Store (CPU version for Apple Silicon)
+faiss-cpu>=1.8.0
+
+# Embedding model handler
+sentence-transformers>=3.0.0
+
+# Document Loaders
+pypdf
+# Add if you need to load Word docs for knowledge base later
+# python-docx
+
+# PDF Manipulation (Reading/Writing)
+pymupdf>=1.24.0
+
+# Hugging Face Transformers & Dependencies
+transformers[torch] # Installs transformers and PyTorch
+Pillow # For image handling
+pytesseract>=0.3.10 # Python wrapper for Tesseract OCR
+# Note: torch will install the appropriate version for your system (CPU/MPS on M1)
+
+# Required by some processors/image handling within transformers/datasets
+datasets
+
+# Optional: For fuzzy string matching (can help map form fields)
+rapidfuzz
+fuzzywuzzy>=0.18.0
+
+python-dotenv>=1.0.0
+
+
+#for serializing/deserializing model configurations in Hugging Face Transformers
+protobuf>=3.20.3
+sentencepiece
+python-Levenshtein>=0.27.1
+pycocotools
+# python-dotx
+
+#webform
+playwright
+beautifulsoup4
+
+ultralytics 
+opencv-python
+ultralytics
+selenium
+huggingface_hub[hf_xet]
+#pip install -r requirements.txt
